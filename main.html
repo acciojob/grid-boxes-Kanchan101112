@@ -3,6 +3,19 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+	  <style>
+		 #grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+      }
+      #grid > div {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+      }
+	  </style>
   </head>
 
   <body>
@@ -17,7 +30,6 @@
       <div>8</div>
       <div>9</div>
       <div>10</div>
-    </body>
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
