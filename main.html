@@ -6,7 +6,7 @@
     #grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-rows: 124px 124px 124px 124px 124px;
       gap: 10px;
       grid-template-areas:
         "one one one one"
@@ -14,6 +14,8 @@
         "two five five six"
         "two seven eight nine"
         "two ten ten ten";
+		  height: 100%;
+
     }
     #grid > div {
       background-color: green;
@@ -21,6 +23,7 @@
       text-align: left;
       color: white;
       font-size: 20px;
+		
     }
     .one { grid-area: one; }
     .two { grid-area: two; }
